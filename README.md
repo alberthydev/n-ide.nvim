@@ -43,7 +43,7 @@ sudo apt install make gcc ripgrep unzip git xclip neovim
 > [!NOTE]
 > [Backup](#FAQ) your previous configuration (if any exists)
 
-#### Clone kickstart.nvim
+#### Clone n-ide.nvim
 
 ```sh
 git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
