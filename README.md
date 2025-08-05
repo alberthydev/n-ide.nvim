@@ -6,7 +6,7 @@ This is my Neovim configuration for using it as an IDE. It’s forked from kicks
 
 ### Install Neovim
 
-This was built to be used on an Arch-based distro. I have no intention of porting it to other operating systems. If you are using a different environment, I highly recommend checking out the kickstart.nvim repository, they support Windows, macOS, and other Linux distributions.
+This was built to be used on an Arch-based distro or WSL. I have no intention of porting it to other operating systems. If you are using a different environment, I highly recommend checking out the kickstart.nvim repository, they support Windows, macOS, and other Linux distributions.
 (It will probably work on any popular modern distro as long as you meet the requirements listed below.)
 
 ### Install External Dependencies
@@ -26,6 +26,16 @@ External Requirements:
 
 ```
 sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
+```
+
+#### Windows Subsystem for Linux (WSL)
+  
+```
+wsl --install
+wsl
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo apt update
+sudo apt install make gcc ripgrep unzip git xclip neovim
 ```
 
 ### Install Kickstart
