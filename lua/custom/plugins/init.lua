@@ -36,4 +36,28 @@ return {
     cmd = { 'LiveServerStart', 'LiveServerStop' },
     config = true,
   },
+  {
+    'nvimdev/lspsaga.nvim',
+    event = 'LspAttach',
+    config = function()
+      require('lspsaga').setup {
+        -- você pode deixar vazio ou colocar configs aqui
+      }
+    end,
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter', -- necessário para highlight
+      'nvim-tree/nvim-web-devicons', -- ícones bonitos
+    },
+  },
+  {
+    'kosayoda/nvim-lightbulb',
+    event = 'LspAttach',
+    dependencies = { 'antoinemadec/FixCursorHold.nvim' },
+    config = function()
+      require('nvim-lightbulb').setup {
+        autocmd = { enabled = true },
+      }
+    end,
+  },
+  { 'L3MON4D3/LuaSnip', dependencies = { 'rafamadriz/friendly-snippets' } },
 }
