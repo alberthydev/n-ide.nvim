@@ -30,4 +30,10 @@ return {
       shell = vim.o.shell,
     },
   },
+  {
+    'barrett-ruth/live-server.nvim',
+    build = 'pnpm add -g live-server',
+    cmd = { 'LiveServerStart', 'LiveServerStop' },
+    config = true,
+  },
 }
