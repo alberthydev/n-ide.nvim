@@ -31,12 +31,6 @@ return {
     },
   },
   {
-    'barrett-ruth/live-server.nvim',
-    build = 'pnpm add -g live-server',
-    cmd = { 'LiveServerStart', 'LiveServerStop' },
-    config = true,
-  },
-  {
     'nvimdev/lspsaga.nvim',
     event = 'LspAttach',
     config = function()
